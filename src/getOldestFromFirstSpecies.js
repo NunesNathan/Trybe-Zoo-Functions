@@ -4,7 +4,7 @@ const { species } = data;
 const { employees } = data;
 
 const animalsFunc = (param) => {
-  const animal = species.find((animal) => animal.id === param);
+  const animal = species.find((animale) => animale.id === param);
   const result = animal.residents.sort((a, b) => b.age - a.age)[0];
   return (Object.values(result));
 };
